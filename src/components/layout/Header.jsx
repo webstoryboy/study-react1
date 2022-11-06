@@ -1,8 +1,8 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
   return (
-    <header id="headerType">
+    <header id="headerType" className={props.fonts}>
       <div className="header__inner">
         <div className="header__logo">
           <a href="/">

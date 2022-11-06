@@ -1,10 +1,13 @@
 import React from "react";
 
-function Footer() {
+function Footer({ attr }) {
   return (
-    <footer id="footerType" className="footer__wrap gray section">
+    <footer
+      id="footerType"
+      className={`footer__wrap ${attr[0]} ${attr[1]} ${attr[3]}`}
+    >
       <h2 className="blind">푸터 영역</h2>
-      <div className="footer__inner container">
+      <div className={`footer__inner ${attr[2]}`}>
         <div className="footer__menu">
           <div>
             <h3>사이트</h3>

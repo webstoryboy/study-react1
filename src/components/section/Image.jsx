@@ -1,8 +1,8 @@
 import React from "react";
 
-function Image() {
+function Image(props) {
   return (
-    <section id="imageType" className="image__wrap section container">
+    <section id="imageType" className={`image__wrap ${props.attr}`}>
       <h2>포트폴리오가 실력이다. 💻</h2>
       <p>웹 디자이너, 웹 퍼블리셔, 프론트앤드를 위한 포트폴리오 입니다. </p>
       <div className="image__inner">
